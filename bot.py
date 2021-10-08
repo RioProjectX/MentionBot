@@ -16,19 +16,19 @@ client = TelegramClient('client', api_id, api_hash).start(bot_token=bot_token)
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("__**Saya Adalah MentionAll Bot**, Saya Dapat Membantu Anda Mention Semua Member 👻\nClick **/help** Untuk Infromasi Lebih Lanjut__\n\n Maintaned By @fckualot",
+  await event.reply("__**Saya Adalah Hashish Mention Bot**, Saya Dapat Membantu Anda Mention Semua Member 👻\nClick **/help** Untuk Infromasi Lebih Lanjut__\n\n Maintaned By [Upi](https://t.me/fqcxuu)",
                     buttons=(
-                      [Button.url('📣 Channel', 'https://t.me/RioProjects'),
-                      Button.url('📦 Group', 'https://t.me/RioGroupSupport')]
+                      [Button.url('📣 Channel', 'https://t.me/upiirobott'),
+                      Button.url('📦 Group', 'https://t.me/ethreborn')]
                     ),
                     link_preview=False
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Help Menu of MentionAllBot**\n\nCommand: /mentionall\n__You can use this command with text what you want to mention others.__\n`Example: /mentionall Good Morning!`\n__You can you this command as a reply to any message. Bot will tag users to that replied messsage__.\n\nFollow [Rio](https://github.com/RioPROJECTX) on Github"
+  helptext = "**Help Menu of HashishMentionBot**\n\nCommand: /mentionall\n__Kamu bisa menggunakan perintah dengan pesan yang kamu ingin mention all.__\n`Contoh: /mentionall Good Morning!`\n__Anda dapat memberikan perintah ini sebagai balasan untuk pesan apa pun. Bot akan menandai pengguna ke pesan balasan itu__.\n\nFollow [Upi](https://github.com/lutfifirmansyahh) on Github"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('📣 Channel', 'https://t.me/RioProjects'),
+                      [Button.url('📣 Channel', 'https://t.me/upiirobott'),
                       Button.url('📦 Group', 'https://t.me/RioGroupSupport')]
                     ),
                     link_preview=False
